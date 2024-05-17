@@ -8,13 +8,17 @@
 </head>
 
 <body>
-
+  <img src="img/logo.png" alt="logo">
+  <li><a href="archivo1.html">A</a></li>
+  <li><a href="archivo2.html">B</a></li>
+  <li><a href="archivo3.html">C</a></li>
+  <li><a href="formulario.html">contacto</a></li>
+  <br>
   <form action="controlador" method="get">
     <div>
       <label for="">ingrese su edad</label>
       <input type="number" step="1" min="0" max="20" value="5" name="edad" readonly>
     </div>
-
     <div>
       <label for="nombre">nombre</label>
       <input type="text" name="nombre" pattern="[a-zA-Z]{0,20}" placeholder="ingrese su nombre" id="nombre" autofocus
@@ -24,7 +28,6 @@
       <label for="color">seleccione un color</label>
       <input type="color" id="color">
     </div>
-    <button type="submit"> guardar </button>
     <div>
       <label for="correo">ingrese su correo</label>
       <input type="text" id="correo" required>
@@ -33,7 +36,16 @@
       <label for="telefono">ingrese su telefono</label>
       <input type="text" id="telefono" required pattern="[0,9]{0,10}">
     </div>
-
+    <div>
+      <label for="ciudad">selccine su ciudad</label>
+      <select name="ciudad" id="ciudad" disabled>
+        <option value="">seleccione una ciudad</option>
+        <option value="1">Bucaramanga</option>
+        <option value="2" selected>florida</option>
+        <option value="3">Giron</option>
+      </select>
+    </div>
+    <button type="submit">guardar</button>
   </form>
 
 
